@@ -1,0 +1,130 @@
+/*media queries*/
+
+/*fullscreen*/
+@media screen and (min-width: 1200px) {
+    .statusline {
+        font-size: 32px;
+    }
+    #starchart-canvas {
+        width: 239px;
+        height: 161px;
+        position: absolute;
+        top: 53px;
+        left: 9px;
+    }
+}
+
+/*800 and up*/
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .statusline {
+        font-size: 22px;
+    }
+    .nav {
+        width: 200px;
+    }
+    #slider {
+        display: none;
+    }
+    #starchart-canvas {
+        position: absolute;
+        width: 183px;
+        height: 135px;
+        top: 33px;
+        left: 9px;
+    }
+    #radio-chatter-button {
+        width: 203px;
+        height: 121px;
+        top: 35px;
+        right: 30px;
+    }
+    #radio-chatter-icon {
+        right: 28px;
+        top: 78px;
+        width: 50px;
+        height: 50px;
+    }
+    #commstext {
+        top: 45px;
+        right: 14px;
+        font-size: 20px;
+    }
+    .chart-container {
+        right: 100px;
+    }
+}
+
+/*600 and up*/
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    .statusline {
+        font-size: 18px;
+    }
+    .nav {
+        width: 150px;
+    }
+    #slider {
+        display: none;
+    }
+    #starchart-canvas {
+        display: none;
+    }
+    #radio-chatter-container {
+        display: none;
+    }
+    .chart-container {
+        display: none;
+    }
+    .map_container {
+        display: none;
+    }
+}
+
+/*480 and up*/
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    .statusline {
+        font-size: 15px;
+    }
+    .nav {
+        display: none;
+    }
+    #slider {
+        display: none;
+    }
+    #starchart-canvas {
+        display: none;
+    }
+    #radio-chatter-container {
+        display: none;
+    }
+    .chart-container {
+        display: none;
+    }
+    .map_container {
+        display: none;
+    }
+}
+
+/*479 and down*/
+@media screen and (max-width: 479px) {
+    .statusline {
+        font-size: 11px;
+    }
+    .nav {
+        display: none;
+    }
+    #slider {
+        display: none;
+    }
+    #starchart-canvas {
+        display: none;
+    }
+    #radio-chatter-container {
+        display: none;
+    }
+    .chart-container {
+        display: none;
+    }
+    .map_container {
+        display: none;
+    }
+}

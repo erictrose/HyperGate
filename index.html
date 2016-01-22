@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--META-->
+    <meta charset="UTF-8">
+    <title>Hypergate</title>
+    <meta name="description" content="Hypergate is a wholly owned subsidiary of the Galactic Transport Corporation® ©2058 All rights reserved.">
+<!--CSS-->
+    <!--Google Font: VT323-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=VT323">
+    <!--Other Fonts-->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <!--Reset-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!--Main Style-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Map-->
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+    <!--Media Queries-->
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+    <!--Chart.js-->
+    <link rel="stylesheet" type="text/css" href="css/chart.css">
+<!--JS-->
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--EasleJS-->
+    <script src="includes/create.js"></script>
+    <!--Chart.js-->
+    <script src="includes/chart.js"></script>
+    <!--Modernizr-->
+    <script src="includes/modernizr.js"></script>
+    <!--Main JS File-->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!--Logo-->
+    <h1 class='titletext'>HyperGate</h1>
+    <!--Blinking Status-->
+    <p class='statusline'>STATUS: <span class='statusline-span blink'>DEPARTURE LANES OPERATIONAL</span></p>
+    <!--Left Panel-->
+    <div class="nav left-nav">
+        <canvas id='starchart-canvas' width="250" height="167"></canvas>
+        <img id="sidepanel" src="images/sidepanel.png"/>
+        <div id='slider'>
+            <video 
+                id="ship1"
+                class="slider-video"
+                width="200"
+                poster="images/ship1-poser.png"
+                autobuffer
+                loop 
+                autoplay >
+                <!--type arrt intentionally left out of mp4 in order to finx problems playing on android devices-->
+                <source src="video/ship_1.mp4"/>
+                <source src="video/ship_1.webm" type="video/webm"/>
+                <source src="video/ship_1.ogv" type="video/pgg"/>
+                Video is not supported in your browser.
+            </video>
+            <video 
+                id="ship2"
+                class="slider-video"
+                width="200"
+                poster="images/ship2-poser.png"
+                autobuffer
+                loop 
+                autoplay >
+                <!--type arrt intentionally left out of mp4 in order to finx problems playing on android devices-->
+                <source src="video/ship_2.mp4"/>
+                <source src="video/ship_2.webm" type="video/webm"/>
+                <source src="video/ship_2.ogv" type="video/pgg"/>
+                Video is not supported in your browser.
+            </video>
+            <video 
+                id="ship3"
+                class="slider-video"
+                width="200"
+                poster="images/ship3-poser.png"
+                autobuffer
+                loop 
+                autoplay >
+                <!--type arrt intentionally left out of mp4 in order to finx problems playing on android devices-->
+                <source src="video/ship_3.mp4"/>
+                <source src="video/ship_3.webm" type="video/webm"/>
+                <source src="video/ship_3.ogv" type="video/pgg"/>
+                Video is not supported in your browser.
+            </video>
+            <img id="sliderimg" src="images/slider.png"/>
+        </div>
+    </div>
+    <!--Right Panel-->
+    <div class="nav right-nav">
+        <audio id="radio-chatter">
+            <source src="audio/radio-chatter.mp3" type="audio/mp3"/>
+            <source src="audio/radio-chatter.ogg" type="audio/ogg"/>
+            Audio is not supported in your browser.
+        </audio>
+        <div id='radio-chatter-container'>
+           <p id="commstext">COMMS CHATTER</p>
+            <img id="radio-chatter-button" src="images/comms.png"/>
+            <img id="radio-chatter-icon" src="images/audio-off.png"/>
+        </div>
+        <img id="sidepanel2" src="images/sidepanel2.png"/>
+    </div>
+    <!--Station Video-->
+    <div class="main-video-container">
+        <video 
+        id="station-video"
+        width="800"
+        poster="images/video-poster.png"
+        autobuffer
+        loop 
+        autoplay >
+            <!--type arrt intentionally left out of mp4 in order to finx problems playing on android devices-->
+            <source src="video/station.mp4"/>
+            <source src="video/station.webm" type="video/webm"/>
+            <source src="video/station.ogv" type="video/pgg"/>
+            Video is not supported in your browser.
+        </video>
+    </div>
+    <!--Population Chart-->
+   <div class="chart-container">
+        <div class="chart-title">
+            <h2>TOP GALACTIC DESINATIONS</h2>
+            <p>Figures based on Intersystem citizens in millions.</p>
+        </div>
+        <div class="chart-content">
+            <div class="chart-y-axis">
+                <p style="top:0px;">1000</p>
+                <p style="bottom:0px;">0</p>
+            </div>
+            <div class="chart-area" bar-spacing="30">
+                <div bar-value="483" label="Galtron 7a" class="chart-bar"></div>
+                <div bar-value="612" label="Valdera TS" class="chart-bar"></div>
+                <div bar-value="785" label="Alnair Nebula" class="chart-bar"></div>
+                <div bar-value="799" label="Lumiere 3C" class="chart-bar"></div>
+                <div bar-value="967" label="Tuscan Belt" class="chart-bar"></div>
+            </div>
+            <div class="chart-x-axis"></div>
+        </div>
+    </div> <!--close population chart-->
+    
+    <!--Map-->
+    <div class="map_container">
+        <!-- Dots -->
+        <a class="dot" style="top:38px; left:25px;" destination="alnair"></a>
+        <a class="dot" style="top:57px; left:94px;" destination="galtron"></a>
+        <a class="dot" style="top:107px; left:105px;" destination="valdera"></a>
+        <a class="dot" style="top:95px; left:271px;" destination="tuscan"></a>
+        <a class="dot" style="top:125px; left:325px;" destination="lumiere" ></a>
+
+        <!-- destination details -->
+        <div class="detail_container">
+            <!-- country -->
+            <div class="dest_detail">
+                <h3>Choose a Destination</h3>
+                <p>Click one of the destinations to the left.</p>
+            </div>
+        </div>
+        <div class="dest_detail_container">
+            <!-- country -->
+            <div class="dest_detail" id="galtron">
+                <div class="dest_info">
+                    <h2>Galtron 7a</h2>
+                </div>
+            </div>
+            <!-- country -->
+            <div class="dest_detail" id="valdera">
+                <div class="dest_info">
+                    <h2>Valdera TS</h2>
+                </div>
+            </div>
+            <!-- country -->
+            <div class="dest_detail" id="alnair">
+                <div class="dest_info">
+                    <h2>Alnair Nebula</h2>
+                </div>
+            </div>
+            <!-- country -->
+            <div class="dest_detail" id="lumiere">
+                <div class="dest_info">
+                  <h2>Lumiere 3C</h2>
+                </div>
+            </div>
+            <!-- country -->
+            <div class="dest_detail" id="tuscan">
+                <div class="dest_info">
+                    <h2>Tuscan Belt</h2>
+                </div>
+            </div>
+        </div> <!-- end country detail container -->
+    </div> <!-- end map container -->
+<!--Blink JS File-->
+<script src="js/blink.js"></script>
+<script src="js/play-video.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/starchart.js"></script>
+<script src="js/radio-chatter.js"></script>
+<script src="js/populationchart.js"></script>
+<script src="js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Main syle sheet */
+
+body {
+    width: 100%;
+    position: absolute;
+    background-color: black;
+}
+
+.titletext {
+    font-family: 'pdark';
+    color: #05fa06;
+    font-size: 7vw;
+    text-align: center;
+    padding-top: 72px;
+}
+
+.statusline {
+    margin-top: 0 0 10px 0;
+    text-align: center;
+    width: 100%;
+    color: #05fa06;
+    font-family: 'vt323';
+}
+
+.statusline-span {
+    color: yellow;
+}
+
+.nav {
+    width: 270px;
+    top: 32px;
+}
+
+.left-nav {
+    position: absolute;
+    z-index: 2;
+}
+
+.right-nav {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#sidepanel {
+    width: 100%;
+}
+
+#sidepanel2 {
+    width: 100%;
+}
+
+#slider {
+    width: 800px;
+    height: 260px;
+    position: absolute;
+    top: 266px;
+    left: -626px;
+    z-index: -1;
+}
+
+.slider-video {
+    position: absolute;
+    margin-top: 31px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0,0,0,.5);;
+}
+
+#ship1 {
+    left: 47px;
+}
+
+#ship2 {
+    left: 308px;
+}
+
+#ship3 {
+    left: 569px;
+}
+
+#sliderimg {
+    width: 100%;
+    z-index: -1;
+}
+
+#commstext {
+    position: absolute;
+    top: 70px;
+    right: 27px;
+    font-family: 'VT323';
+    font-size: 24px;
+    color: #05fa06;
+}
+
+#radio-chatter-button {
+    position: absolute;
+    right: 63px;
+    top: 61px;
+    width: 223px;
+    height: 141px;
+}
+
+#radio-chatter-icon {
+    position: absolute;
+    right: 46px;
+    top: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+.main-video-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#station-video {
+    width: 100%;
+}
+
+.chart-container {
+    position: fixed;
+    bottom: 0;
+    right: 147px;
+}

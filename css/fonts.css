@@ -1,0 +1,13 @@
+/* Fonts */
+@font-face {
+    font-family: 'pdark';
+    src: url(../fonts/pdark.ttf);
+}
+
+.pdark {
+    font-family: pdark;
+}
+
+.vt323 {
+    font-family: 'VT323';
+}
