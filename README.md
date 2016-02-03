@@ -3,6 +3,8 @@ Hypergate
 [![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges) <br>
 *website* <br>
 
+![Image of hyper gate](http://imgur.com/XroElJw.png) <br>
+
 A futuristic interface concept. <br>
 
 Technologies: <br>
