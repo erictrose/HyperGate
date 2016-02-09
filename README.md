@@ -1,7 +1,7 @@
 Hypergate
 =============
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges) <br>
-*website* <br>
+[*website*](http://hypergate.eric.hosting) <br>
 
 ![Image of hyper gate](http://imgur.com/XroElJw.png) <br>
 
